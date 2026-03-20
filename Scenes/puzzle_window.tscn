@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dy6prygnqm0qb"]
+[gd_scene format=3 uid="uid://dy6prygnqm0qb"]
 
-[ext_resource type="Script" uid="uid://cetilrdbn2f22" path="res://Scripts/Puzzle.cs" id="1_3u7nb"]
+[ext_resource type="Script" uid="uid://fr6s6tnv4ht6" path="res://Scripts/Puzzle.cs" id="1_3u7nb"]
 
 [sub_resource type="Theme" id="Theme_bve1a"]
 HBoxContainer/constants/separation = 0
@@ -10,31 +10,36 @@ VBoxContainer/constants/separation = 0
 GridContainer/constants/h_separation = 0
 GridContainer/constants/v_separation = 0
 
-[node name="Puzzle Window" type="Window"]
+[node name="Puzzle Window" type="Window" unique_id=944112510]
+oversampling_override = 1.0
 title = "Puzzle"
 initial_position = 1
-unresizable = true
+content_scale_size = Vector2i(32, 32)
+content_scale_mode = 2
+content_scale_aspect = 1
 
-[node name="Puzzle" type="Control" parent="."]
+[node name="Puzzle" type="Control" parent="." unique_id=1653180173]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 32.0
-offset_bottom = 32.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_3u7nb")
 
-[node name="Vert Numbers" type="VBoxContainer" parent="Puzzle"]
+[node name="Vert Numbers" type="VBoxContainer" parent="Puzzle" unique_id=985602226]
 layout_mode = 0
 offset_right = 32.0
 offset_bottom = 32.0
 theme = SubResource("Theme_bve1a")
 
-[node name="Horz Numbers" type="HBoxContainer" parent="Puzzle"]
+[node name="Horz Numbers" type="HBoxContainer" parent="Puzzle" unique_id=862236289]
 layout_mode = 0
 offset_right = 32.0
 offset_bottom = 32.0
 theme = SubResource("Theme_bve1a")
 
-[node name="Board" type="GridContainer" parent="Puzzle"]
+[node name="Board" type="GridContainer" parent="Puzzle" unique_id=685821357]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 0
 offset_right = 32.0

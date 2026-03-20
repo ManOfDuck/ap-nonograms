@@ -1,57 +1,57 @@
-[gd_scene load_steps=4 format=3 uid="uid://cpt3hxp7kam2h"]
+[gd_scene format=3 uid="uid://cpt3hxp7kam2h"]
 
-[ext_resource type="Script" uid="uid://5mt3smgl5sje" path="res://Scripts/Main.cs" id="1_xu6yw"]
+[ext_resource type="Script" uid="uid://cmt4nhf5xuey6" path="res://Scripts/Main.cs" id="1_xu6yw"]
 [ext_resource type="PackedScene" uid="uid://cle75bwenn2k" path="res://Scenes/text_client_window.tscn" id="2_5qwqg"]
 [ext_resource type="PackedScene" uid="uid://dy6prygnqm0qb" path="res://Scenes/puzzle_window.tscn" id="3_5otpo"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=174076014]
 script = ExtResource("1_xu6yw")
 
-[node name="Text Client Window" parent="." instance=ExtResource("2_5qwqg")]
+[node name="Text Client Window" parent="." unique_id=606150197 instance=ExtResource("2_5qwqg")]
 visible = false
 
-[node name="Puzzle Window" parent="." instance=ExtResource("3_5otpo")]
+[node name="Puzzle Window" parent="." unique_id=2063644373 instance=ExtResource("3_5otpo")]
 visible = false
 
-[node name="Disconnect" type="Button" parent="."]
+[node name="Disconnect" type="Button" parent="." unique_id=87076266]
 visible = false
 offset_top = 96.0
 offset_right = 94.0
 offset_bottom = 127.0
 text = "Disconnect"
 
-[node name="Connect" type="Button" parent="."]
+[node name="Connect" type="Button" parent="." unique_id=1297065951]
 offset_top = 96.0
 offset_right = 94.0
 offset_bottom = 127.0
 text = "Connect"
 
-[node name="IP" type="LineEdit" parent="."]
+[node name="IP" type="LineEdit" parent="." unique_id=775524638]
 offset_right = 400.0
 offset_bottom = 31.0
 text = "archipelago.gg:38281"
 placeholder_text = "IP:Port"
 
-[node name="Slot" type="LineEdit" parent="."]
+[node name="Slot" type="LineEdit" parent="." unique_id=290030908]
 offset_top = 32.0
 offset_right = 400.0
 offset_bottom = 63.0
 placeholder_text = "Slot"
 
-[node name="Password" type="LineEdit" parent="."]
+[node name="Password" type="LineEdit" parent="." unique_id=1052958387]
 offset_top = 64.0
 offset_right = 400.0
 offset_bottom = 95.0
 placeholder_text = "Password"
 
-[node name="New" type="Button" parent="."]
+[node name="New" type="Button" parent="." unique_id=1475696684]
 offset_left = 304.0
 offset_top = 96.0
 offset_right = 400.0
 offset_bottom = 127.0
 text = "New Puzzle"
 
-[node name="Check" type="Button" parent="."]
+[node name="Check" type="Button" parent="." unique_id=559416028]
 offset_left = 248.0
 offset_top = 96.0
 offset_right = 303.0
