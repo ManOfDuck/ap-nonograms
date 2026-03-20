@@ -153,6 +153,7 @@ public partial class Puzzle : Control
 
 		GetParent<Window>().Size =
 			(Vector2I)_boardRender.Position + (new Vector2I(_board.GetLength(0), _board.GetLength(1)) * 32) + (new Vector2I(32, 32));
+		GetParent<Window>().ContentScaleSize = GetParent<Window>().Size;
 		GetParent<Window>().Title = "????? By: " + Author;
 		GetParent<Window>().Visible = true;
 	}
